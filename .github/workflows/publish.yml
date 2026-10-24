@@ -43,7 +43,7 @@ jobs:
             [ -f "$f" ] || continue
             name=$(basename "$f")
             jq -e '.game and (.entries | type == "array") and all(.entries[]; .through and .reason and (.ids | length > 0) and ((.kind // "broken") | IN("broken", "superseded", "notRecommended")))' "$f" >/dev/null
-            jq --argjson serial "$(date +%s)" '. + {serial: $serial}' "$f" >"$out/$name"
+            jq -c --argjson serial "$(date +%s)" '. + {serial: $serial}' "$f" >"$out/$name"
             openssl pkeyutl -sign -rawin -inkey "$key" -in "$out/$name" -out "$out/$name.sig"
             gh release upload lists "$out/$name" "$out/$name.sig" --clobber
           done
