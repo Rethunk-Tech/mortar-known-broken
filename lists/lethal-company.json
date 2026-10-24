@@ -48,8 +48,8 @@
         "thunderstore": "dogboys-CameraHeightAdjuster"
       },
       "through": "1.0.1",
-      "kind": "broken",
-      "reason": "Does not work in its latest version."
+      "kind": "notRecommended",
+      "reason": "It works, but has a bug its author won't fix."
     },
     {
       "ids": {
@@ -91,7 +91,8 @@
       },
       "through": "0.1.9",
       "kind": "broken",
-      "reason": "Does not work in its latest version."
+      "reason": "Does not work in its latest version.",
+      "replacement": "mattymatty-LobbyControl"
     },
     {
       "ids": {
@@ -138,8 +139,9 @@
         "thunderstore": "ShaosilGaming-GeneralImprovements"
       },
       "through": "1.5.5",
-      "kind": "broken",
-      "reason": "Does not work in its latest version."
+      "kind": "notRecommended",
+      "reason": "Some of its features have problems. NicheTweaks covers most of them; only its monitors have no replacement yet.",
+      "replacement": "mr_hat-NicheTweaks"
     },
     {
       "ids": {
@@ -173,7 +175,8 @@
       },
       "through": "2.1.0",
       "kind": "broken",
-      "reason": "Does not work in its latest version."
+      "reason": "Does not work in its latest version.",
+      "replacement": "MINE9289-BetterSprayPaintForkColors"
     },
     {
       "ids": {
