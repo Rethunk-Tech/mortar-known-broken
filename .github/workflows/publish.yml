@@ -1,0 +1,49 @@
+name: publish
+
+on:
+  push:
+    branches: [main]
+    paths: ["lists/*.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+
+      - name: Sign and upload changed lists
+        env:
+          UPDATE_KEY: ${{ secrets.MORTAR_UPDATE_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test -n "$UPDATE_KEY"
+          umask 077
+          key="$RUNNER_TEMP/updater.key"
+          trap 'rm -f "$key"' EXIT
+          printf '%s\n' "$UPDATE_KEY" >"$key"
+          if [ "${{ github.event_name }}" = workflow_dispatch ]; then
+            changed=$(ls lists/*.json)
+          else
+            changed=$(git diff --name-only HEAD^ HEAD -- 'lists/*.json')
+          fi
+          gh release view lists >/dev/null 2>&1 || gh release create lists --title "Known-broken lists" --notes "Signed per-game lists Mortar downloads." --latest=false
+          out="$RUNNER_TEMP/out"; mkdir -p "$out"
+          for f in $changed; do
+            [ -f "$f" ] || continue
+            name=$(basename "$f")
+            jq -e '.game and (.entries | type == "array") and all(.entries[]; .through and .reason and (.ids | length > 0))' "$f" >/dev/null
+            jq --argjson serial "$(date +%s)" '. + {serial: $serial}' "$f" >"$out/$name"
+            openssl pkeyutl -sign -rawin -inkey "$key" -in "$out/$name" -out "$out/$name.sig"
+            gh release upload lists "$out/$name" "$out/$name.sig" --clobber
+          done

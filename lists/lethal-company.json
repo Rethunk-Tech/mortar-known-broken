@@ -1,0 +1,68 @@
+{
+  "game": "lethal-company",
+  "entries": [
+    {
+      "ids": {
+        "thunderstore": "Dantor-Dantors_Mental_Hospital"
+      },
+      "through": "1.3.0",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "DiFFoZ-CompanyCruiserFix"
+      },
+      "through": "1.0.5",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "Evaisa-LethalThings"
+      },
+      "through": "0.10.13",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "pacoito-LethalLevelLoaderUpdated"
+      },
+      "through": "1.6.0",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "Piggy-LC_Office"
+      },
+      "through": "2.3.4",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "scoopy-Scoopys_Variety_Mod"
+      },
+      "through": "1.2.0",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "sfDesat-ViewExtension"
+      },
+      "through": "1.3.0",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "taffyko-BetterSprayPaint"
+      },
+      "through": "2.1.0",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "Yorimor-CustomStoryLogs"
+      },
+      "through": "1.6.0",
+      "reason": "Does not work in its latest version."
+    }
+  ]
+}
