@@ -11,6 +11,7 @@ has set up, checks its signature and marks the listed versions as broken whereve
       "ids": { "thunderstore": "Namespace-Name", "smapi": "UniqueID", "nexus": 123, "curseforge": 123, "github": "owner/repo" },
       "through": "1.2.3",
       "gameVersions": ">=50",
+      "kind": "broken",
       "reason": "One sentence on what goes wrong.",
       "replacement": "Namespace-Name"
     }
@@ -21,6 +22,8 @@ has set up, checks its signature and marks the listed versions as broken whereve
 - `through` is required: that version and older are broken; a newer version is taken to be fixed.
 - `gameVersions` is optional: constraints separated by spaces (`<`, `<=`, `>`, `>=`, `=`), limiting the entry to those
   game versions.
+- `kind` is `broken` (the default), `superseded` (another mod does its job now) or `notRecommended`.
+- `replacement` is optional: the package (`Namespace-Name`) to use instead.
 - `ids` names the mod on each site it is on; one is enough.
 
 A push to `main` that changes a list publishes it: CI stamps a serial, signs it, and uploads `<game>.json` and

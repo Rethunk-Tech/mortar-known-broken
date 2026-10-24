@@ -3,9 +3,36 @@
   "entries": [
     {
       "ids": {
+        "thunderstore": "AnythingGoesGit-MoreDeathNotes"
+      },
+      "through": "1.4.0",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "EliteMasterEric-Coroner"
+    },
+    {
+      "ids": {
+        "thunderstore": "blink9803-DimmingFlashlights"
+      },
+      "through": "1.0.1",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "mr_hat-DimmingFlashlights"
+    },
+    {
+      "ids": {
+        "thunderstore": "BotalionBingus-Wildlife_Archive"
+      },
+      "through": "1.0.4",
+      "kind": "broken",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
         "thunderstore": "Dantor-Dantors_Mental_Hospital"
       },
       "through": "1.3.0",
+      "kind": "broken",
       "reason": "Does not work in its latest version."
     },
     {
@@ -13,6 +40,15 @@
         "thunderstore": "DiFFoZ-CompanyCruiserFix"
       },
       "through": "1.0.5",
+      "kind": "broken",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "dogboys-CameraHeightAdjuster"
+      },
+      "through": "1.0.1",
+      "kind": "broken",
       "reason": "Does not work in its latest version."
     },
     {
@@ -20,6 +56,49 @@
         "thunderstore": "Evaisa-LethalThings"
       },
       "through": "0.10.13",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "HQ_Team-LethalThingsReloaded"
+    },
+    {
+      "ids": {
+        "thunderstore": "Gemumoddo-LethalEmotesAPI"
+      },
+      "through": "1.18.0",
+      "kind": "broken",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "Kittenji-NavMeshInCompany"
+      },
+      "through": "1.0.3",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "TRizzle-NavMeshInCompanyRedux"
+    },
+    {
+      "ids": {
+        "thunderstore": "LegoMaster3650-FairGiants"
+      },
+      "through": "1.1.2",
+      "kind": "broken",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "LTGVE-VeryLateCompany"
+      },
+      "through": "0.1.9",
+      "kind": "broken",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "lukeprime-EnhancedTweaks"
+      },
+      "through": "1.0.4",
+      "kind": "broken",
       "reason": "Does not work in its latest version."
     },
     {
@@ -27,6 +106,7 @@
         "thunderstore": "pacoito-LethalLevelLoaderUpdated"
       },
       "through": "1.6.0",
+      "kind": "broken",
       "reason": "Does not work in its latest version."
     },
     {
@@ -34,6 +114,7 @@
         "thunderstore": "Piggy-LC_Office"
       },
       "through": "2.3.4",
+      "kind": "broken",
       "reason": "Does not work in its latest version."
     },
     {
@@ -41,6 +122,7 @@
         "thunderstore": "scoopy-Scoopys_Variety_Mod"
       },
       "through": "1.2.0",
+      "kind": "broken",
       "reason": "Does not work in its latest version."
     },
     {
@@ -48,13 +130,65 @@
         "thunderstore": "sfDesat-ViewExtension"
       },
       "through": "1.3.0",
+      "kind": "broken",
       "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "ShaosilGaming-GeneralImprovements"
+      },
+      "through": "1.5.5",
+      "kind": "broken",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "SlapItNow-LethalHands"
+      },
+      "through": "23.0.2",
+      "kind": "broken",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "Sparble-FacelessStalker"
+      },
+      "through": "1.2.1",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "AuroraBytes-FacelessStalker_Fork"
+    },
+    {
+      "ids": {
+        "thunderstore": "SylviBlossom-SmartItemSaving"
+      },
+      "through": "1.2.4",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "mr_hat-BasedItemSaving"
     },
     {
       "ids": {
         "thunderstore": "taffyko-BetterSprayPaint"
       },
       "through": "2.1.0",
+      "kind": "broken",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "TisRyno-LethalCompanyProgressionPatchFix"
+      },
+      "through": "2.3.2",
+      "kind": "broken",
+      "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "WhiteSpike-Moon_Day_Speed_Multiplier_Patcher"
+      },
+      "through": "1.0.1",
+      "kind": "broken",
       "reason": "Does not work in its latest version."
     },
     {
@@ -62,7 +196,26 @@
         "thunderstore": "Yorimor-CustomStoryLogs"
       },
       "through": "1.6.0",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "Magic_Wesley-CustomStoryLogsFixed"
+    },
+    {
+      "ids": {
+        "thunderstore": "Zaggy1024-DunGenReferenceFixer"
+      },
+      "through": "0.0.1",
+      "kind": "broken",
       "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "ZetaArcade-MoreCounterplayFork"
+      },
+      "through": "1.5.1",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "BaronDrakula-MoreCounterplay"
     }
   ]
 }
