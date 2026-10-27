@@ -13,7 +13,8 @@ has set up, checks its signature and marks the listed versions as broken whereve
       "gameVersions": ">=50",
       "kind": "broken",
       "reason": "One sentence on what goes wrong.",
-      "replacement": "Namespace-Name"
+      "replacement": "Namespace-Name",
+      "dropIn": true
     }
   ]
 }
@@ -24,6 +25,9 @@ has set up, checks its signature and marks the listed versions as broken whereve
   game versions.
 - `kind` is `broken` (the default), `superseded` (another mod does its job now) or `notRecommended`.
 - `replacement` is optional: the package (`Namespace-Name`) to use instead.
+- `dropIn` is optional, on a `superseded` entry with a `thunderstore` id and a `replacement`: the replacement does
+  everything the mod did for packs that depend on it. Mortar then counts it as meeting those dependencies and installs it
+  in the mod's place. Set it only when every pack made for the mod works with the replacement.
 - `ids` names the mod on each site it is on; one is enough.
 
 A push to `main` that changes a list publishes it: CI stamps a serial, signs it, and uploads `<game>.json` and
