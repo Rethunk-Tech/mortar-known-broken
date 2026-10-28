@@ -1,0 +1,15 @@
+{
+  "game": "riskofrain2",
+  "entries": [
+    {
+      "ids": {
+        "thunderstore": "rob_gaming-Driver"
+      },
+      "through": "2.0.2",
+      "kind": "superseded",
+      "reason": "Moved to public_ParticleSystem, which carries on its updates.",
+      "replacement": "public_ParticleSystem-Driver",
+      "dropIn": true
+    }
+  ]
+}
