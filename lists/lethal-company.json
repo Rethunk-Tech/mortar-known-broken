@@ -3,6 +3,15 @@
   "entries": [
     {
       "ids": {
+        "thunderstore": "anormaltwig-LateCompany"
+      },
+      "through": "1.0.18",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "mattymatty-LobbyControl"
+    },
+    {
+      "ids": {
         "thunderstore": "AnythingGoesGit-MoreDeathNotes"
       },
       "through": "1.4.0",
@@ -26,6 +35,15 @@
       "through": "1.0.4",
       "kind": "broken",
       "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "BranchModding-LateCompany"
+      },
+      "through": "1.0.0",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "mattymatty-LobbyControl"
     },
     {
       "ids": {
@@ -70,6 +88,24 @@
     },
     {
       "ids": {
+        "thunderstore": "Happyness-ExtendedLateCompany"
+      },
+      "through": "1.1.1",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "mattymatty-LobbyControl"
+    },
+    {
+      "ids": {
+        "thunderstore": "HoppinsHauler-LateJoinAllInOne"
+      },
+      "through": "1.0.0",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "mattymatty-LobbyControl"
+    },
+    {
+      "ids": {
         "thunderstore": "Kittenji-NavMeshInCompany"
       },
       "through": "1.0.3",
@@ -101,6 +137,15 @@
       "through": "1.0.4",
       "kind": "broken",
       "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "McBowie-VeryLateCompany"
+      },
+      "through": "0.4.0",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "mattymatty-LobbyControl"
     },
     {
       "ids": {
@@ -148,6 +193,15 @@
     },
     {
       "ids": {
+        "thunderstore": "SimpleZombie-LateCompany"
+      },
+      "through": "1.0.4",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "mattymatty-LobbyControl"
+    },
+    {
+      "ids": {
         "thunderstore": "SlapItNow-LethalHands"
       },
       "through": "23.0.2",
@@ -180,6 +234,24 @@
       "kind": "broken",
       "reason": "Does not work in its latest version.",
       "replacement": "MINE9289-BetterSprayPaintForkColors"
+    },
+    {
+      "ids": {
+        "thunderstore": "TheNumZero-ShipLobbyPlus"
+      },
+      "through": "1.0.0",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "mattymatty-LobbyControl"
+    },
+    {
+      "ids": {
+        "thunderstore": "tinyhoot-ShipLobby"
+      },
+      "through": "1.0.2",
+      "kind": "broken",
+      "reason": "Does not work in its latest version.",
+      "replacement": "mattymatty-LobbyControl"
     },
     {
       "ids": {
