@@ -151,7 +151,7 @@
       },
       "through": "23.0.2",
       "kind": "broken",
-      "reason": "Does not work in its latest version."
+      "reason": "Breaks emote mods."
     },
     {
       "ids": {
