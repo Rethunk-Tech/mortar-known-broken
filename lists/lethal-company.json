@@ -108,7 +108,8 @@
       },
       "through": "1.6.0",
       "kind": "broken",
-      "reason": "Does not work in its latest version."
+      "reason": "Does not work in its latest version.",
+      "replacement": "IAmBatby-LethalLevelLoader"
     },
     {
       "ids": {
