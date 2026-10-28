@@ -83,8 +83,8 @@
         "thunderstore": "Gemumoddo-LethalEmotesAPI"
       },
       "through": "1.18.0",
-      "kind": "broken",
-      "reason": "Does not work in its latest version."
+      "kind": "notRecommended",
+      "reason": "It works on its own, but breaks with some other mods."
     },
     {
       "ids": {
