@@ -109,8 +109,8 @@
         "thunderstore": "Kittenji-NavMeshInCompany"
       },
       "through": "1.0.3",
-      "kind": "broken",
-      "reason": "Does not work in its latest version.",
+      "kind": "superseded",
+      "reason": "It works, but NavMeshInCompanyRedux does the same job better.",
       "replacement": "TRizzle-NavMeshInCompanyRedux"
     },
     {
