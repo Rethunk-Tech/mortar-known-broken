@@ -3,6 +3,14 @@
   "entries": [
     {
       "ids": {
+        "thunderstore": "2018-LC_API"
+      },
+      "through": "3.4.5",
+      "kind": "broken",
+      "reason": "Every version of LC_API is broken."
+    },
+    {
+      "ids": {
         "thunderstore": "anormaltwig-LateCompany"
       },
       "through": "1.0.18",
@@ -68,6 +76,14 @@
       "through": "1.0.1",
       "kind": "notRecommended",
       "reason": "It works, but has a bug its author won't fix."
+    },
+    {
+      "ids": {
+        "thunderstore": "DrFeederino-LC_API_V50"
+      },
+      "through": "3.4.14",
+      "kind": "broken",
+      "reason": "Every version of LC_API is broken."
     },
     {
       "ids": {
@@ -137,6 +153,14 @@
       "through": "1.0.4",
       "kind": "broken",
       "reason": "Does not work in its latest version."
+    },
+    {
+      "ids": {
+        "thunderstore": "MassiveNewCoilers-LC_API_extended"
+      },
+      "through": "1.5.1",
+      "kind": "broken",
+      "reason": "Every version of LC_API is broken."
     },
     {
       "ids": {
