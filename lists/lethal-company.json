@@ -209,7 +209,7 @@
       },
       "through": "0.0.1",
       "kind": "broken",
-      "reason": "Does not work in its latest version."
+      "reason": "Known to cause crashes; only use it to run an outdated interior."
     },
     {
       "ids": {
