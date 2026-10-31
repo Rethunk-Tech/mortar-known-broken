@@ -55,6 +55,16 @@
     },
     {
       "ids": {
+        "thunderstore": "CodeEnder-Custom_Boombox_Fix"
+      },
+      "through": "1.2.5",
+      "kind": "superseded",
+      "reason": "Mortar-Boombox plays the songs from every Custom Songs pack without copying or deleting them.",
+      "replacement": "Mortar-Boombox",
+      "dropIn": true
+    },
+    {
+      "ids": {
         "thunderstore": "Dantor-Dantors_Mental_Hospital"
       },
       "through": "1.3.0",
@@ -93,6 +103,26 @@
       "kind": "broken",
       "reason": "Does not work in its latest version.",
       "replacement": "HQ_Team-LethalThingsReloaded"
+    },
+    {
+      "ids": {
+        "thunderstore": "femboytv-LethalPaintings"
+      },
+      "through": "1.2.3",
+      "kind": "superseded",
+      "reason": "Mortar-Posters shows the paintings from every LethalPaintings pack and from its own mortar/paintings folders.",
+      "replacement": "Mortar-Posters",
+      "dropIn": true
+    },
+    {
+      "ids": {
+        "thunderstore": "femboytv-LethalPosters"
+      },
+      "through": "1.2.3",
+      "kind": "superseded",
+      "reason": "Deprecated; Mortar-Posters shows the posters and tips from every LethalPosters pack and from its own mortar folders.",
+      "replacement": "Mortar-Posters",
+      "dropIn": true
     },
     {
       "ids": {
@@ -191,6 +221,16 @@
     },
     {
       "ids": {
+        "thunderstore": "Rattenbonkers-TVLoader"
+      },
+      "through": "1.1.2",
+      "kind": "superseded",
+      "reason": "Mortar-Television plays the videos from every Television Videos pack, the same video at the same moment for everyone.",
+      "replacement": "Mortar-Television",
+      "dropIn": true
+    },
+    {
+      "ids": {
         "thunderstore": "scoopy-Scoopys_Variety_Mod"
       },
       "through": "1.2.0",
@@ -240,6 +280,16 @@
       "kind": "broken",
       "reason": "Does not work in its latest version.",
       "replacement": "AuroraBytes-FacelessStalker_Fork"
+    },
+    {
+      "ids": {
+        "thunderstore": "Steven-Custom_Boombox_Music"
+      },
+      "through": "1.4.0",
+      "kind": "superseded",
+      "reason": "Mortar-Boombox plays the songs from every Custom Songs pack without copying or deleting them.",
+      "replacement": "Mortar-Boombox",
+      "dropIn": true
     },
     {
       "ids": {
