@@ -329,14 +329,6 @@
     },
     {
       "ids": {
-        "thunderstore": "TisRyno-LethalCompanyProgressionPatchFix"
-      },
-      "through": "2.3.2",
-      "kind": "broken",
-      "reason": "Does not work in its latest version."
-    },
-    {
-      "ids": {
         "thunderstore": "WhiteSpike-Moon_Day_Speed_Multiplier_Patcher"
       },
       "through": "1.0.1",
