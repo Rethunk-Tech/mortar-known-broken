@@ -1,0 +1,2 @@
+[gates.schema]
+run = "scripts/check-schema.sh"
