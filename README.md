@@ -31,4 +31,4 @@ has set up, checks its signature and marks the listed versions as broken whereve
 - `ids` names the mod on each site it is on; one is enough.
 
 A push to `main` that changes a list publishes it: CI stamps a serial, signs it, and uploads `<game>.json` and
-`<game>.json.sig` to the `lists` release.
+`<game>.json.sig` (and `<game>.json.v2.sig`, signed over the list name too) to the `lists` release.
