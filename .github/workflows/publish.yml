@@ -21,13 +21,14 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          fetch-depth: 2
+          fetch-depth: 0
           persist-credentials: false
 
       - name: Sign and upload changed lists
         env:
           UPDATE_KEY: ${{ secrets.MORTAR_UPDATE_KEY }}
           GH_TOKEN: ${{ github.token }}
+          BEFORE: ${{ github.event.before }}
         run: |
           test -n "$UPDATE_KEY"
           umask 077
@@ -37,7 +38,7 @@ jobs:
           if [ "${{ github.event_name }}" = workflow_dispatch ]; then
             changed=$(ls lists/*.json)
           else
-            changed=$(git diff --name-only HEAD^ HEAD -- 'lists/*.json')
+            changed=$(git diff --name-only "$BEFORE" HEAD -- 'lists/*.json')
           fi
           gh release view lists >/dev/null 2>&1 || gh release create lists --title "Known-broken lists" --notes "Signed per-game lists Mortar downloads." --latest=false
           out="$RUNNER_TEMP/out"; mkdir -p "$out"
