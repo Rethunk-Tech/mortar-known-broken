@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Signed lists of mods known to be broken, one file per game in `lists/` (`lethal-company.json`, `riskofrain2.json`). Mortar downloads the list for each game a player has set up, checks the signature and flags the listed versions. The entry format is documented in `README.md`.
+Signed lists of mods known to be broken, one file per game in `lists/` (`lethal-company.json`, `riskofrain2.json`). Mortar downloads the list for each game a player has set up, checks the signature and flags the listed versions. The entry format is documented in `HUMANS.md`.
 
 ## Layout
 

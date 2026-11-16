@@ -1,34 +1,41 @@
-# Mortar known-broken lists
+<h1 align="center">Mortar known-broken lists</h1>
 
-One file per game in `lists/`, naming mods that are known not to work. Mortar downloads the list of each game a player
-has set up, checks its signature and marks the listed versions as broken wherever the mod appears.
+<div align="center">
 
-```json
-{
-  "game": "lethal-company",
-  "entries": [
-    {
-      "ids": { "thunderstore": "Namespace-Name", "smapi": "UniqueID", "nexus": 123, "curseforge": 123, "github": "owner/repo" },
-      "through": "1.2.3",
-      "gameVersions": ">=50",
-      "kind": "broken",
-      "reason": "One sentence on what goes wrong.",
-      "replacement": "Namespace-Name",
-      "dropIn": true
-    }
-  ]
-}
+[![schema](https://github.com/Rethunk-Tech/mortar-known-broken/actions/workflows/schema.yml/badge.svg)](https://github.com/Rethunk-Tech/mortar-known-broken/actions/workflows/schema.yml)
+
+</div>
+
+---
+
+This repo is the source for the signed JSON lists Mortar downloads. There is one file per game under `lists/`. Each file names mods (and the versions they fail through) so Mortar can flag those versions wherever the mod appears.
+
+Mortar fetches the list for every game a player has set up, checks the signature, and applies the entries. Editors change the JSON in this repository. A merge to `main` is what stamps a serial, signs the file, and uploads it.
+
+## Quick start
+
+Check every list with the same rules Mortar uses when it decodes one:
+
+```sh
+scripts/check-schema.sh
 ```
 
-- `through` is required: that version and older are broken; a newer version is taken to be fixed.
-- `gameVersions` is optional: constraints separated by spaces (`<`, `<=`, `>`, `>=`, `=`), limiting the entry to those
-  game versions.
-- `kind` is `broken` (the default), `superseded` (another mod does its job now) or `notRecommended`.
-- `replacement` is optional: the package (`Namespace-Name`) to use instead.
-- `dropIn` is optional, on a `superseded` entry with a `thunderstore` id and a `replacement`: the replacement does
-  everything the mod did for packs that depend on it. Mortar then counts it as meeting those dependencies and installs it
-  in the mod's place. Set it only when every pack made for the mod works with the replacement.
-- `ids` names the mod on each site it is on; one is enough.
+How to add an entry, which fields are required, and what merge publishes are in [HUMANS.md](HUMANS.md).
 
-A push to `main` that changes a list publishes it: CI stamps a serial, signs it, and uploads `<game>.json` and
-`<game>.json.sig` (and `<game>.json.v2.sig`, signed over the list name too) to the `lists` release.
+## Highlights
+
+- One JSON file per game in `lists/`, each with a `through` version and a reason sentence per entry
+- `scripts/check-schema.sh` (the `gate` target in `.gate.toml`) rejects a list Mortar would drop, including duplicate ids
+- A push to `main` that changes `lists/*.json` signs the file with the `MORTAR_UPDATE_KEY` secret and uploads `<game>.json`, `.sig`, and `.v2.sig` to the `lists` release
+
+## Documentation
+
+| Doc | What it covers |
+| --- | --- |
+| [HUMANS.md](HUMANS.md) | Adding entries, field meanings, checking, publish |
+| [AGENTS.md](AGENTS.md) | Layout, gate rules, invariants |
+| [LICENSE](LICENSE) | License text |
+
+## License
+
+Apache License 2.0. See [LICENSE](LICENSE).
