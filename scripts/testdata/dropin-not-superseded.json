@@ -1,0 +1,15 @@
+{
+  "game": "dropin-not-superseded",
+  "entries": [
+    {
+      "through": "1.0.0",
+      "reason": "dropIn is only valid on a superseded entry.",
+      "ids": {
+        "thunderstore": "Author-Mod"
+      },
+      "kind": "broken",
+      "replacement": "Author-NewMod",
+      "dropIn": true
+    }
+  ]
+}

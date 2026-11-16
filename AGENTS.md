@@ -10,7 +10,7 @@ Signed lists of mods known to be broken, one file per game in `lists/` (`lethal-
 
 ## Gate
 
-`gate` runs `scripts/check-schema.sh` (the one gate in `.gate.toml`); pass file paths to check a subset. It fails on a wrong `game`, a missing `through` or `reason`, an empty `ids`, an unknown `kind`, a bad id type, or a duplicate id across entries.
+`gate` runs `scripts/check-schema.sh` (the one gate in `.gate.toml`); pass file paths to check a subset. It fails on a wrong `game`, a missing `through` or `reason`, an empty `ids`, an all-unknown id set, an unknown `kind`, a bad id type, `dropIn` unless `kind` is `superseded` with a thunderstore id and a replacement, or a duplicate id across entries.
 
 ## Invariants
 

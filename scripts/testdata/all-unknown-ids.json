@@ -1,0 +1,12 @@
+{
+  "game": "all-unknown-ids",
+  "entries": [
+    {
+      "through": "1.0.0",
+      "reason": "Ids must include at least one known source.",
+      "ids": {
+        "unknown": "mod"
+      }
+    }
+  ]
+}
