@@ -1,2 +1,3 @@
 [deviations]
 patterns-ci-workflow-00002 = "publish.yml signs and uploads GitHub Release assets; cancelling a superseded run mid-upload can leave a list unpublished because the newer run only uploads files from its push"
+patterns-repo-settings-00001 = "this repository holds no Go, so the fleet CodeQL artifact's go autobuild matrix leg does not apply"
