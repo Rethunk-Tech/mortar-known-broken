@@ -5,12 +5,12 @@ Signed lists of mods known to be broken, one file per game in `lists/` (`lethal-
 ## Layout
 
 - `lists/<game>.json`: `{"game": "<same as the file name>", "entries": [...]}`.
-- `scripts/check-schema.sh`: the schema gate, a `jq` mirror of Mortar's `DecodeBrokenList` and the types it unmarshals into. One bad entry makes Mortar drop the whole list, so this must stay as strict as Mortar.
+- `scripts/check-schema.sh`: the schema gate, a `jq` port of Mortar's `DecodeBrokenList` (including the `gameVersions` constraint regex) and the types it unmarshals into; Mortar's decoder is `internal`, so this repo cannot import it. One bad entry makes Mortar drop the whole list, so this must stay as strict as Mortar.
 - `.github/workflows/publish.yml`: on a push to `main` that changes `lists/*.json` (or manual dispatch for all), stamps a serial, signs with the `MORTAR_UPDATE_KEY` secret and uploads `<game>.json`, `.sig` and `.v2.sig` to the `lists` release. `schema.yml` runs the check on pull requests.
 
 ## Gate
 
-`gate` runs `scripts/check-schema.sh` (the one gate in `.gate.toml`); pass file paths to check a subset. It fails on a wrong `game`, a missing `through` or `reason`, an empty `ids`, an all-unknown id set, an unknown `kind`, a bad id type, `dropIn` unless `kind` is `superseded` with a thunderstore id and a replacement, or a duplicate id across entries.
+`gate` runs `scripts/check-schema.sh` (the one gate in `.gate.toml`); pass file paths to check a subset. It fails on a wrong `game`, a missing `through` or `reason`, an empty `ids`, an all-unknown id set, an unknown `kind`, a bad id type, `dropIn` unless `kind` is `superseded` with a thunderstore id and a replacement, a `gameVersions` word that is not an operator plus a version, a null id value, a missing file, or a duplicate id across entries.
 
 ## Invariants
 
